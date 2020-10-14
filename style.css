@@ -1,0 +1,38 @@
+* {
+    --headerFontSize: 2rem;   
+    --headerPadding: 0.5rem; 
+    --footerFontSize: 1rem;
+    --footerPadding: 0.5rem;
+  }
+  
+  header{
+    background-color: darkseagreen;
+    font-size: 1.5rem;
+    width: 100%;
+    position:fixed;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    background-color: lightblue;
+    width: 100%;
+    height: calc(
+      100vh 
+      - var(--headerFontSize) 
+      - (2 * var(--headerPadding))
+      - var(--footerFontSize) 
+      - (2 * var(--footerPadding))
+  );
+  overflow-y: auto;
+  }
+  
+  footer{
+    background-color: darkseagreen;
+    bottom: 0;
+    width: 100%;
+    height: 3.0rem;
+    position: fixed;
+    padding: 1rem;
+  }    
+ 
